@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1089534419640446}
+  m_IsPrefabParent: 1
+--- !u!1 &1089534419640446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4799591294342616}
+  - component: {fileID: 114891622241678648}
+  m_Layer: 0
+  m_Name: PowerUpManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4799591294342616
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1089534419640446}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114891622241678648
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1089534419640446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 624d5d52ecb7e3747828245c42f6be5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Float_Parent: {fileID: 0}
+  _powerUps:
+  - {fileID: 114983038393239414, guid: 96166d96c15475343864973319dd700d, type: 2}
+  - {fileID: 114929111225844996, guid: 311e0ed00b6489841a76491d0cf3d1ca, type: 2}
+  - {fileID: 114262363283031424, guid: f0533a679cfad60459cb9e9cdcf38d78, type: 2}
+  - {fileID: 114670370480604192, guid: 0cae4f8ef7b436e4b950c9143d901c62, type: 2}
+  - {fileID: 114186062525445098, guid: f0cc44b88d2c87e47b5bc3a0c7c97b5d, type: 2}
+  - {fileID: 114083083127980514, guid: 3f951be304593344cb0a0a9de3a0a4a0, type: 2}
+  - {fileID: 114035066119525480, guid: cabef5d109be2e140b24a6d51d0895f2, type: 2}
+  - {fileID: 114697297547677646, guid: b0b95238a48eed441b6f7f28d67a4f05, type: 2}
+  - {fileID: 114639752027487820, guid: 641216a6ec2c2854081095d02d3e35dc, type: 2}
+  - {fileID: 114660804683428142, guid: 44e2665606f56134892d52c2ec4dae51, type: 2}
+  - {fileID: 114101079037063930, guid: 7e41905adb855ee4da858ce87b4861ad, type: 2}
+  - {fileID: 114211683209205802, guid: 621360bef22318c448d3520ab3329bdd, type: 2}
+  _debuffs:
+  - {fileID: 114943031688234626, guid: c6f1a9a7801e24e45979e1762f2e7634, type: 2}
+  - {fileID: 114986038922285916, guid: e13afccb6ddda7f4babc40ab1733e6f4, type: 2}
+  - {fileID: 114986038922285916, guid: 4fb8ae88dbe9a5b408e8f0f946dac164, type: 2}
