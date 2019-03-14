@@ -1,2 +1,2 @@
 # BlockBomber
-A VR game made for the google daydream. 
+A VR game made for the google daydream.
