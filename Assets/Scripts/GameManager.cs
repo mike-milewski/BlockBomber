@@ -16,8 +16,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Objectives Objective;
 
-    [SerializeField]
-    private GameObject EnemyPrefab;
+    //[SerializeField]
+    //private GameObject EnemyPrefab;
 
     [SerializeField]
     private GameObject KeyPrefab;
@@ -87,10 +87,12 @@ public class GameManager : MonoBehaviour
         return ExplosionParticlePrefab;
     }
 
+    /*
     public GameObject GetEnemies()
     {
         return EnemyPrefab;
     }
+    */
 
     public void CheckKeysInStage()
     {
@@ -146,6 +148,8 @@ public class GameManager : MonoBehaviour
     void WinGame()
     {
         SoundManager.Instance.LevelWinSE();
+
+        Player.Instance.GetComponent<Player>().enabled = false;
     }
 
     private void StartTimeObjective()
