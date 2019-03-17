@@ -390,7 +390,7 @@ GameObject:
   - component: {fileID: 887259497}
   - component: {fileID: 887259496}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -458,7 +458,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 887259495}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 205.9, y: -272, z: 214.2}
+  m_LocalPosition: {x: 26, y: -272, z: 214.2}
   m_LocalScale: {x: 236.38786, y: 128.85353, z: 163.69852}
   m_Children: []
   m_Father: {fileID: 0}

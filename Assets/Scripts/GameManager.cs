@@ -150,6 +150,7 @@ public class GameManager : MonoBehaviour
         SoundManager.Instance.LevelWinSE();
 
         Player.Instance.GetComponent<Player>().enabled = false;
+        StageTimer.Instance.GetStartTimer = false;
     }
 
     private void StartTimeObjective()
