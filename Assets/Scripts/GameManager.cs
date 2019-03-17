@@ -16,9 +16,6 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Objectives Objective;
 
-    //[SerializeField]
-    //private GameObject EnemyPrefab;
-
     [SerializeField]
     private GameObject KeyPrefab;
 
@@ -87,13 +84,6 @@ public class GameManager : MonoBehaviour
         return ExplosionParticlePrefab;
     }
 
-    /*
-    public GameObject GetEnemies()
-    {
-        return EnemyPrefab;
-    }
-    */
-
     public void CheckKeysInStage()
     {
         if (NumKeys > 0 || Objective != Objectives.Keys)
@@ -122,25 +112,18 @@ public class GameManager : MonoBehaviour
     {
         Player.Instance.enabled = true;
 
-        MeshRenderer[] Renderer = Character.Instance.GetComponentsInChildren<MeshRenderer>();
-
-        foreach(var r in Renderer)
-        {
-            r.enabled = true;
-        }
-
         Character.Instance.GetComponent<MeshRenderer>().enabled = true;
 
         Character.Instance.transform.position = new Vector3(0, -23.725f, 28);
 
-        Collider Coll = Character.Instance.GetComponent<Collider>();
-
-        Coll.enabled = true;
+        Character.Instance.GetComponent<Collider>().enabled = true;
     }
 
     public void GameOver()
     {
         StageTimer.Instance.GetStartTimer = false;
+
+        SoundManager.Instance.GameOverSE();
 
         StartCoroutine("RestartLevel");
     }
@@ -163,7 +146,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator RestartLevel()
     {
-        yield return new WaitForSeconds(7.5f);
+        yield return new WaitForSeconds(3.5f);
         SceneManager.LoadScene(1);
     }
 

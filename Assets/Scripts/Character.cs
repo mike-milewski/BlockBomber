@@ -371,16 +371,9 @@ public class Character : MonoBehaviour, ICharacterInterface
 
         Lives--;
 
-        MeshRenderer[] Renderer = this.GetComponentsInChildren<MeshRenderer>();
+        this.GetComponent<Collider>().enabled = false;
 
-        foreach (var r in Renderer)
-        {
-            r.enabled = false;
-        }
-
-        Collider Coll = GetComponent<Collider>();
-
-        Coll.enabled = false;
+        this.GetComponent<MeshRenderer>().enabled = false;
 
         Character.Instance.GetCanMove = true;
         Character.Instance.GetMoving = false;
